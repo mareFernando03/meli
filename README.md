@@ -1,5 +1,3 @@
-# Getting Started with Create React App
-
 # Proyecto: Web App de E-commerce con Mercado Libre API
 
 Esta aplicación permite buscar productos, ver sus detalles y, opcionalmente, gestionar un carrito de compras. Utiliza la API de Mercado Libre para realizar búsquedas y obtener detalles de los productos seleccionados.

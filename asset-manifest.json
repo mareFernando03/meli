@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/meli/static/css/main.5b16202c.css",
+    "main.js": "/meli/static/js/main.a00bc375.js",
+    "static/js/453.1ff8d036.chunk.js": "/meli/static/js/453.1ff8d036.chunk.js",
+    "index.html": "/meli/index.html",
+    "main.5b16202c.css.map": "/meli/static/css/main.5b16202c.css.map",
+    "main.a00bc375.js.map": "/meli/static/js/main.a00bc375.js.map",
+    "453.1ff8d036.chunk.js.map": "/meli/static/js/453.1ff8d036.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b16202c.css",
+    "static/js/main.a00bc375.js"
+  ]
+}

@@ -20,7 +20,10 @@ const ProductItem = ({ product }) => {
         </Typography>
       </CardContent>
       <Box sx={{ padding: 2 }}>
-        <Link to={`/product/${product.id}`} style={{ textDecoration: "none", color: "#3483fa" }}>
+        <Link
+          to={`/product/${product.id}`}
+          style={{ textDecoration: "none", color: "#3483fa" }}
+        >
           Ver detalles
         </Link>
       </Box>

@@ -1,7 +1,7 @@
 {
-  "name": "spoti",
+  "name": "meli",
   "version": "0.1.0",
-  "homepage": "https://mareFernando03.github.io/spoti",
+  "homepage": "https://mareFernando03.github.io/meli",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.3",

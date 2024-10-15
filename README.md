@@ -6,7 +6,7 @@ Esta aplicación permite buscar productos, ver sus detalles y, opcionalmente, ge
 
 ## Enlace a la aplicación
 
-Prueba la aplicación [aquí](#https://marefernando03.github.io/home/).
+Prueba la aplicación [aquí](https://marefernando03.github.io/home/).
 
 ## Características
 
@@ -69,5 +69,5 @@ Prueba la aplicación [aquí](#https://marefernando03.github.io/home/).
 
 ## Autores
 
-- Fernando Mare
-- Fabricio Quinteros
+- [Fernando Mare](https://github.com/mareFernando03)
+- [Fabricio Quinteros](https://github.com/FabriQuinteros)

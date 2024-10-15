@@ -1,70 +1,73 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Proyecto: Web App de E-commerce con Mercado Libre API
 
-## Available Scripts
+Esta aplicación permite buscar productos, ver sus detalles y, opcionalmente, gestionar un carrito de compras. Utiliza la API de Mercado Libre para realizar búsquedas y obtener detalles de los productos seleccionados.
 
-In the project directory, you can run:
+## Enlace a la aplicación
 
-### `npm start`
+Prueba la aplicación [aquí](#https://marefernando03.github.io/home/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Características
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Búsqueda de productos** utilizando el endpoint de Mercado Libre.
+- **Listado de productos** que muestra el nombre, precio y foto de cada uno.
+- **Vista de detalle del producto** que incluye nombre, precio, foto y descripción.
+- **Navegación fluida** entre la búsqueda de productos y los detalles usando React Router.
+- **Botón para regresar** a la vista de búsqueda desde el detalle de producto.
 
-### `npm test`
+### Power Ups Implementados
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Si un producto tiene más de una foto, se muestra un **carousel** para visualizar las imágenes.
+- Se puede **filtrar la búsqueda** de productos por categorías.
+- La vista de detalle del producto incluye una **tabla con los atributos adicionales** del producto.
 
-### `npm run build`
+## Tecnologías utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React.js** para la creación de componentes y lógica de la aplicación.
+- **React Router** para la gestión de rutas entre las vistas de búsqueda y detalle.
+- **API de Mercado Libre** para la búsqueda y detalles de productos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Cómo usar la aplicación
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Buscar productos**: En la página principal, utiliza el campo de búsqueda para ingresar el nombre del producto que deseas buscar.
+2. **Ver el listado de productos**: Los resultados de la búsqueda mostrarán el nombre, precio y foto de cada producto.
+3. **Ver detalles de un producto**: Haz clic en cualquier producto de la lista para ver más detalles, incluyendo una descripción y más fotos.
+4. **Navegación**: Puedes regresar a la vista de búsqueda usando el botón "Volver".
+5. **Power Ups**: Explora las fotos de los productos con el carousel y revisa la tabla de atributos en la vista de detalle.
 
-### `npm run eject`
+## Endpoints utilizados
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Búsqueda de productos**: `https://api.mercadolibre.com/sites/MLA/search?q={producto}`
+- **Detalles de un producto**: `https://api.mercadolibre.com/items/{id_producto}`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Instalación y uso local
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clona el repositorio:
+    ```bash
+    git clone https://github.com/mareFernando03/meli.git
+    ```
+2. Instala las dependencias:
+    ```bash
+    npm install
+    ```
+3. Inicia la aplicación:
+    ```bash
+    npm start
+    ```
+4. Accede a la aplicación en el navegador:
+    ```arduino
+    http://localhost:3000
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Requisitos técnicos
 
-## Learn More
+- Al menos **5 componentes de React**.
+- Al menos **2 vistas gestionadas con React Router**.
+- Llamadas a **2 endpoints distintos** de la API de Mercado Libre.
+- Mínimo **un commit por integrante** en el repositorio.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Autores
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Fernando Mare
+- Fabricio Quinteros

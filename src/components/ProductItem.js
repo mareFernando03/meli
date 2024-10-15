@@ -1,39 +1,29 @@
 import React from "react";
+import { Card, CardMedia, CardContent, Typography, Box } from "@mui/material";
 import { Link } from "react-router-dom";
-import {
-  Card,
-  CardMedia,
-  CardContent,
-  Typography,
-  Button,
-} from "@mui/material";
 
 const ProductItem = ({ product }) => {
   return (
-    <Card>
+    <Card sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
       <CardMedia
         component="img"
-        height="140"
         image={product.thumbnail}
         alt={product.title}
+        sx={{ height: 200, objectFit: "contain", backgroundColor: "#f5f5f5" }}
       />
-      <CardContent>
-        <Typography variant="h6" gutterBottom>
+      <CardContent sx={{ flexGrow: 1 }}>
+        <Typography gutterBottom variant="h6" component="h2" noWrap>
           {product.title}
         </Typography>
-        <Typography variant="body1" color="textSecondary">
+        <Typography variant="body2" color="textSecondary">
           ${product.price}
         </Typography>
-        <Button
-          component={Link}
-          to={`/product/${product.id}`}
-          variant="contained"
-          size="small"
-          sx={{ marginTop: 1 }}
-        >
-          Ver detalles
-        </Button>
       </CardContent>
+      <Box sx={{ padding: 2 }}>
+        <Link to={`/product/${product.id}`} style={{ textDecoration: "none", color: "#3483fa" }}>
+          Ver detalles
+        </Link>
+      </Box>
     </Card>
   );
 };

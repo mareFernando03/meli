@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ProductItem from "./ProductItem";
 import SearchBar from "./SearchBar";
-import { Grid, Container, Box } from "@mui/material";
+import { Grid2, Container, Box } from "@mui/material";
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -20,13 +20,13 @@ const ProductList = () => {
     <Container>
       <Box sx={{ marginTop: 5 }}>
         <SearchBar onSearch={handleSearch} />
-        <Grid container spacing={3} sx={{ marginTop: 3 }}>
+        <Grid2 container spacing={3} sx={{ marginTop: 3 }}>
           {products.map((product) => (
-            <Grid item xs={12} sm={6} md={4} key={product.id}>
+            <Grid2 item xs={12} sm={6} md={4} key={product.id}>
               <ProductItem product={product} />
-            </Grid>
+            </Grid2>
           ))}
-        </Grid>
+        </Grid2>
       </Box>
     </Container>
   );

@@ -1,21 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
+import { Select, MenuItem, FormControl, InputLabel } from "@mui/material";
 
 const CategoryFilter = ({ onCategoryChange }) => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    fetch('https://api.mercadolibre.com/sites/MLA/categories')
-      .then(response => response.json())
-      .then(data => setCategories(data));
+    fetch("https://api.mercadolibre.com/sites/MLA/categories")
+      .then((response) => response.json())
+      .then((data) => setCategories(data));
   }, []);
 
   return (
-    <select onChange={(e) => onCategoryChange(e.target.value)}>
-      <option value="">Todas las categorías</option>
-      {categories.map(category => (
-        <option key={category.id} value={category.id}>{category.name}</option>
-      ))}
-    </select>
+    <FormControl fullWidth>
+      <InputLabel>Categoría</InputLabel>
+      <Select
+        label="Categoría"
+        onChange={(e) => onCategoryChange(e.target.value)}
+        defaultValue=""
+      >
+        <MenuItem value="">Todas las categorías</MenuItem>
+        {categories.map((category) => (
+          <MenuItem key={category.id} value={category.id}>
+            {category.name}
+          </MenuItem>
+        ))}
+      </Select>
+    </FormControl>
   );
 };
 

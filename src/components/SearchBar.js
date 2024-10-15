@@ -1,25 +1,29 @@
-import React, { useState } from 'react';
-import CategoryFilter from './CategoryFilter';
+import React, { useState } from "react";
+import CategoryFilter from "./CategoryFilter";
+import { TextField, Button, Box } from "@mui/material";
 
 const SearchBar = ({ onSearch }) => {
-  const [query, setQuery] = useState('');
-  const [category, setCategory] = useState('');
+  const [query, setQuery] = useState("");
+  const [category, setCategory] = useState("");
 
   const handleSearch = () => {
     onSearch(query, category);
   };
 
   return (
-    <div>
-      <input 
-        type="text" 
-        value={query} 
-        onChange={(e) => setQuery(e.target.value)} 
-        placeholder="Buscar productos..." 
+    <Box sx={{ display: "flex", gap: 2, marginBottom: 2 }}>
+      <TextField
+        label="Buscar productos..."
+        variant="outlined"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        fullWidth
       />
       <CategoryFilter onCategoryChange={setCategory} />
-      <button onClick={handleSearch}>Buscar</button>
-    </div>
+      <Button variant="contained" color="primary" onClick={handleSearch}>
+        Buscar
+      </Button>
+    </Box>
   );
 };
 

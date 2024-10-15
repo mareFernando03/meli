@@ -141,7 +141,7 @@ const ProductDetail = () => {
           <Box sx={{ textAlign: "center", marginTop: 2 }}>
             <Button
               component={Link}
-              to="/home"
+              to="/"
               variant="contained"
               color="primary"
             >

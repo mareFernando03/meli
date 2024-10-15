@@ -4,7 +4,7 @@ Esta aplicación permite buscar productos, ver sus detalles y, opcionalmente, ge
 
 ## Enlace a la aplicación
 
-Prueba la aplicación [aquí](https://marefernando03.github.io/home/).
+Prueba la aplicación [aquí](https://marefernando03.github.io/).
 
 ## Características
 

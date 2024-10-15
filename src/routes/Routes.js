@@ -5,7 +5,7 @@ import ProductDetail from "../components/ProductDetail";
 
 const AppRoutes = () => {
   return (
-    <Router>
+    <Router basename="/meli">
       <Routes>
         <Route path="/" element={<ProductList />} />
         <Route path="/product/:id" element={<ProductDetail />} />
